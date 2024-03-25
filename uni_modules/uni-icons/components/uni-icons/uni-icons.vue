@@ -53,11 +53,10 @@ export default {
 		},
 		color: {
 			type: String,
-			default: "#333333",
 		},
 		size: {
 			type: [Number, String],
-			default: 26,
+			default: 16,
 		},
 		customPrefix: {
 			type: String,
@@ -113,5 +112,6 @@ export default {
 	font-family: uniicons;
 	text-decoration: none;
 	text-align: center;
+	color: $uni-main-color;
 }
 </style>
