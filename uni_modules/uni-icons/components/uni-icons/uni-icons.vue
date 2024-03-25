@@ -56,7 +56,7 @@ export default {
 		},
 		size: {
 			type: [Number, String],
-			default: 16,
+			default: 24,
 		},
 		customPrefix: {
 			type: String,

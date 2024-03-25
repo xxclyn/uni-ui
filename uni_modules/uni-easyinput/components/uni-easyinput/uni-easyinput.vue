@@ -653,7 +653,7 @@ $uni-border-1: #dcdfe6 !default;
 	flex: 1;
 	line-height: 1;
 	font-size: 14px;
-	height: $uni-input-height;
+	height: 35px;
 	// min-height: 36px;
 
 	/*ifdef H5*/
