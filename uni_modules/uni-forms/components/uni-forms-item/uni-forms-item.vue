@@ -525,7 +525,7 @@ export default {
 	}
 
 	&__error {
-		color: #f56c6c;
+		color: $uni-error;
 		font-size: 12px;
 		line-height: 1;
 		padding-top: 4px;

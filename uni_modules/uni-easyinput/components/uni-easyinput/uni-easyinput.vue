@@ -118,7 +118,10 @@
 				<uni-icons
 					v-if="isVal"
 					class="content-clear-icon"
-					:class="{ 'is-textarea-icon': type === 'textarea' }"
+					:class="{
+						'is-textarea-icon': type === 'textarea',
+						'has-clear': clearable,
+					}"
 					:type="showPassword ? 'eye-slash' : 'eye'"
 					:size="20"
 					@click="onEyes"
@@ -703,8 +706,11 @@ $uni-border-1: #dcdfe6 !default;
 }
 
 .content-clear-icon {
-	padding: 0 10px 0 0;
+	padding: 0 10px 0 5px;
 	color: $uni-extra-color;
+	&.has-clear {
+		padding-right: 0;
+	}
 }
 
 .label-icon {
@@ -745,10 +751,6 @@ $uni-border-1: #dcdfe6 !default;
 
 .is-input-error-border {
 	border-color: $uni-error;
-
-	.uni-easyinput__placeholder-class {
-		color: mix(#fff, $uni-error, 50%);
-	}
 }
 
 .uni-easyinput--border {
