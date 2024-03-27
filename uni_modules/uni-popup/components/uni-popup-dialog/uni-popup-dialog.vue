@@ -12,7 +12,7 @@
 				<text class="uni-dialog-content-text">{{ content }}</text>
 			</slot>
 		</view>
-		<view v-else class="uni-dialog-content">
+		<view v-if="mode !== 'base'" class="uni-dialog-content">
 			<slot>
 				<input
 					class="uni-dialog-input"
