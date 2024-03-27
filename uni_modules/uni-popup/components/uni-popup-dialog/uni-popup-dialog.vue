@@ -7,7 +7,7 @@
 				>{{ titleText }}</text
 			>
 		</view>
-		<view v-if="mode === 'base'" class="uni-dialog-content">
+		<view v-if="mode === 'base' && content" class="uni-dialog-content">
 			<slot>
 				<text class="uni-dialog-content-text">{{ content }}</text>
 			</slot>
@@ -224,8 +224,8 @@ export default {
 
 <style lang="scss">
 .uni-popup-dialog {
-	width: 300px;
-	border-radius: 11px;
+	width: 280px;
+	border-radius: 10px;
 	background-color: #fff;
 }
 
@@ -236,6 +236,7 @@ export default {
 	flex-direction: row;
 	justify-content: center;
 	padding-top: 25px;
+	padding-bottom: 20px;
 }
 
 .uni-dialog-title-text {
@@ -250,7 +251,7 @@ export default {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 20px;
+	padding: 0 20px 20px;
 }
 
 .uni-dialog-content-text {
