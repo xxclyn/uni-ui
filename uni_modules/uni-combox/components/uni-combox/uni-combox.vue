@@ -209,6 +209,8 @@ export default {
 	font-size: 14px;
 	height: 22px;
 	line-height: 22px;
+	color: $uni-input-color;
+	font-family: $uni-input-font-family;
 }
 
 .uni-combox__input-plac {
