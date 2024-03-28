@@ -15,7 +15,7 @@
 						>{{ typePlaceholder }}</view
 					>
 					<view v-if="current && clear && !disabled" @click.stop="clearVal">
-						<uni-icons type="clear" color="#8a8f8d" size="20" />
+						<uni-icons class="content-clear-icon" type="close" size="20" />
 					</view>
 					<view v-else>
 						<uni-icons
@@ -416,7 +416,6 @@ $uni-border-3: #e5e5e5;
 	border: 1px solid $uni-border-3;
 	box-sizing: border-box;
 	border-radius: 4px;
-	padding: 0 5px;
 	padding-left: 10px;
 	position: relative;
 	/* #ifndef APP-NVUE */
@@ -597,5 +596,13 @@ $uni-border-3: #e5e5e5;
 	right: 0;
 	left: 0;
 	z-index: 2;
+}
+
+.content-clear-icon {
+	padding: 0 10px 0 5px;
+	color: $uni-extra-color;
+	&.has-clear {
+		padding-right: 0;
+	}
 }
 </style>
