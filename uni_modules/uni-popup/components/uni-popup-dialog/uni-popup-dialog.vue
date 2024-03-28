@@ -236,7 +236,7 @@ export default {
 	flex-direction: row;
 	justify-content: center;
 	padding-top: 25px;
-	padding-bottom: 20px;
+	padding-bottom: 25px;
 }
 
 .uni-dialog-title-text {
