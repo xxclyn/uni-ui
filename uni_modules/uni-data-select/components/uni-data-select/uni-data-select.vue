@@ -17,7 +17,7 @@
 					<view v-if="current && clear && !disabled" @click.stop="clearVal">
 						<uni-icons class="content-clear-icon" type="close" size="20" />
 					</view>
-					<view v-else>
+					<view style="padding-right: 12px" v-else>
 						<uni-icons
 							:type="showSelector ? 'top' : 'bottom'"
 							size="14"
