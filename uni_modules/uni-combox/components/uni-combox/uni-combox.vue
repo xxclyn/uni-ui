@@ -59,7 +59,7 @@
  */
 export default {
 	name: "uniCombox",
-	emits: ["input", "update:modelValue"],
+	emits: ["input", "confirm", "update:modelValue"],
 	props: {
 		border: {
 			type: Boolean,
